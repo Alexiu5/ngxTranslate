@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="title-container">
+    <h1>{{'title.text' | translate}}</h1>
+    <p>{{'title.content' | translate}}</p>
+  </div>
+
+  <div class="container-buttons">
+    <button [ngClass] = " {'active': activeLang == 'Language.spanish'} " (click)="changeLang('es')"> Español </button>
+    <button [ngClass]= "  {'active':  activeLang == 'language.english'}" (click)="changeLang('en')"> English </button>
+  </div>
+</div>
